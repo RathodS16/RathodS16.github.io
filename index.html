@@ -95,6 +95,20 @@ a:hover{
   nav a{display:inline-block;margin:6px}
 }
 </style>
+/* Highlight Labels */
+.tag {
+  display:inline-block;
+  padding:3px 8px;
+  font-size:12px;
+  font-weight:bold;
+  border-radius:4px;
+  margin-right:6px;
+  color:white;
+}
+
+.upcoming { background:#2e7d32; }   /* Green */
+.expected { background:#f57c00; }   /* Orange */
+.new { background:#1565c0; }        /* Blue */
 </head>
 
 <body>
@@ -147,11 +161,39 @@ Click Here
 </section>
 
 <section id="news" class="box">
-<h2>Daily Newspaper</h2>
+<h2>Daily Govt Job Highlights (Upcoming Notifications)</h2>
+
 <ul>
-<li>Employment News (English)</li>
-<li>Rojgar Samachar (Hindi)</li>
+<li>
+<span class="tag expected">EXPECTED</span>
+<b>SSC CGL 2025</b> – Notification expected in June 2025
+</li>
+
+<li>
+<span class="tag upcoming">UPCOMING</span>
+<b>Railway Group D</b> – Vacancy expected soon (1+ lakh posts)
+</li>
+
+<li>
+<span class="tag expected">EXPECTED</span>
+<b>UP Police Constable</b> – Recruitment likely in 2025
+</li>
+
+<li>
+<span class="tag upcoming">UPCOMING</span>
+<b>IBPS PO / Clerk</b> – Banking notifications expected in August
+</li>
+
+<li>
+<span class="tag new">NEW</span>
+<b>Indian Army Agniveer</b> – Rally dates to be announced
+</li>
 </ul>
+
+<p style="font-size:13px;color:#555;">
+ℹ️ These are expected updates based on official sources and previous recruitment cycles. 
+Exact dates and details will be published in official notifications.
+</p>
 </section>
 
 <footer style="background:#003366;color:white;padding:15px;text-align:center;font-size:14px;">
