@@ -93,8 +93,6 @@ a:hover{
 @media (max-width:600px){
   header{font-size:20px}
   nav a{display:inline-block;margin:6px}
-}
-</style>
 /* Highlight Labels */
 .tag {
   display:inline-block;
@@ -109,6 +107,18 @@ a:hover{
 .upcoming { background:#2e7d32; }   /* Green */
 .expected { background:#f57c00; }   /* Orange */
 .new { background:#1565c0; }        /* Blue */
+/* Blinking effect for NEW */
+.blink {
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  0% { opacity: 1; }
+  50% { opacity: 0.3; }
+  100% { opacity: 1; }
+}
+</style>
+
 </head>
 
 <body>
@@ -164,30 +174,47 @@ Click Here
 <h2>Daily Govt Job Highlights (Upcoming Notifications)</h2>
 
 <ul>
+
 <li>
 <span class="tag expected">EXPECTED</span>
-<b>SSC CGL 2025</b> – Notification expected in June 2025
+<b>SSC CGL 2025</b>
+<span style="font-size:12px;color:#777;">(Updated: 20 May 2025)</span><br>
+Notification expected in June 2025
+<a href="#jobs" style="font-size:13px;">Read More</a>
 </li>
 
 <li>
 <span class="tag upcoming">UPCOMING</span>
-<b>Railway Group D</b> – Vacancy expected soon (1+ lakh posts)
+<b>Railway Group D</b>
+<span style="font-size:12px;color:#777;">(Updated: 20 May 2025)</span><br>
+Vacancy expected soon (1+ lakh posts)
+<a href="#jobs" style="font-size:13px;">Read More</a>
 </li>
 
 <li>
 <span class="tag expected">EXPECTED</span>
-<b>UP Police Constable</b> – Recruitment likely in 2025
+<b>UP Police Constable</b>
+<span style="font-size:12px;color:#777;">(Updated: 20 May 2025)</span><br>
+Recruitment likely in 2025
+<a href="#jobs" style="font-size:13px;">Read More</a>
 </li>
 
 <li>
 <span class="tag upcoming">UPCOMING</span>
-<b>IBPS PO / Clerk</b> – Banking notifications expected in August
+<b>IBPS PO / Clerk</b>
+<span style="font-size:12px;color:#777;">(Updated: 20 May 2025)</span><br>
+Banking notifications expected in August
+<a href="#jobs" style="font-size:13px;">Read More</a>
 </li>
 
 <li>
-<span class="tag new">NEW</span>
-<b>Indian Army Agniveer</b> – Rally dates to be announced
+<span class="tag new blink">NEW</span>
+<b>Indian Army Agniveer</b>
+<span style="font-size:12px;color:#777;">(Updated: 20 May 2025)</span><br>
+Rally dates to be announced
+<a href="#jobs" style="font-size:13px;">Read More</a>
 </li>
+
 </ul>
 
 <p style="font-size:13px;color:#555;">
