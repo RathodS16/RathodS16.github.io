@@ -154,6 +154,27 @@ a:hover{
 .job-card a:hover{
   text-decoration:underline;
 }
+  .job-categories-horizontal {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 15px;
+}
+
+.job-categories-horizontal a {
+  background: #f1f5f9;
+  padding: 8px 12px;
+  border-radius: 6px;
+  text-decoration: none;
+  color: #003366;
+  font-weight: bold;
+  border: 1px solid #ddd;
+}
+
+.job-categories-horizontal a:hover {
+  background: #003366;
+  color: white;
+  }
 </style>
 
 </head>
@@ -166,12 +187,12 @@ a:hover{
   
 <h2>Job Categories</h2>
 
-<ul>
-  <li><a href="/bank-jobs.html">🏦 Bank Jobs</a></li>
-  <li><a href="/railway-jobs.html">🚆 Railway Jobs</a></li>
-  <li><a href="/police-defence-jobs.html">🪖 Police / Defence Jobs</a></li>
-  <li><a href="/teaching-jobs.html">🎓 Teaching Jobs</a></li>
-</ul>
+<div class="job-categories-horizontal">
+  <a href="bank-jobs.html">🏦 Bank Jobs</a>
+  <a href="railway-jobs.html">🚆 Railway Jobs</a>
+  <a href="police-defence-jobs.html">👮 Police / Defence Jobs</a>
+  <a href="teaching-jobs.html">🎓 Teaching Jobs</a>
+</div>
 
 <nav>
   <a href="index.html">Home</a>
