@@ -226,6 +226,24 @@ a:hover{
   box-shadow: 0 2px 6px rgba(0,0,0,0.08);
   list-style: none;
 }
+.categories {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.cat-btn {
+  background: #0b4f6c;
+  color: #fff;
+  padding: 10px 14px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.cat-btn:hover {
+  background: #08384d;
+}
 </style>
 
 </head>
@@ -237,20 +255,17 @@ a:hover{
   <p>Latest Government Jobs, Admit Cards & Results</p>
 </header>
   
-<h2>Job Categories</h2>
-
-<div class="job-categories-horizontal">
-  <input 
-  type="text" 
-  id="jobSearch" 
-  placeholder="🔍 Search job (SSC, Bank, KVS, Railway...)">
-  <a href="bank-jobs.html">🏦 Bank Jobs</a>
-  <a href="railway-jobs.html">🚆 Railway Jobs</a>
-  <a href="police-defence-jobs.html">👮 Police / Defence Jobs</a>
-  <a href="teaching-jobs.html">🎓 Teaching Jobs</a>
-  <a href="medical-jobs.html">🏥 Medical Jobs</a>
-  <a href="karnataka-jobs.html">📍 Karnataka Jobs</a>
-</div>
+<section class="box">
+  <h2>Job Categories</h2>
+  <div class="categories">
+    <a href="bank-jobs.html" class="cat-btn">Bank Jobs</a>
+    <a href="railway-jobs.html" class="cat-btn">Railway Jobs</a>
+    <a href="police-jobs.html" class="cat-btn">Police / Defence</a>
+    <a href="teaching-jobs.html" class="cat-btn">Teaching Jobs</a>
+    <a href="medical-jobs.html" class="cat-btn">Medical Jobs</a>
+    <a href="karnataka-jobs.html" class="cat-btn">Karnataka Jobs</a>
+  </div>
+</section>
 
 <nav>
   <a href="index.html">Home</a>
